@@ -3,12 +3,15 @@ package com.example.WebSocketdemo.model;
 
 import java.awt.*;
 
-public class chatMessage {
+public class ChatMessage {
 private TrayIcon.MessageType type;
 private String content;
 private String sender;
 
-public enum MessageType {
+    public void setType(MessageType messageType) {
+    }
+
+    public enum MessageType {
     CHAT,
     JOIN,
     LEAVE
